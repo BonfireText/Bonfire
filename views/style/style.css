@@ -1,0 +1,96 @@
+:root {
+    --color-bg: #36393f;
+    --color-titlebar: #221f1f;
+    --color-servers: #221f1f;
+    --color-side: #2c2e33;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./Poppins.ttf");
+}
+
+*,
+*::before,
+*::after {
+    font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border: 5px solid #464646;
+    background: #464646;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #31302f;
+    border-radius: 5px;
+}
+
+body {
+    color: white;
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+}
+
+*[titlebar] {
+    float: left;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    background: var(--color-titlebar);
+    margin-bottom: 20px;
+    -webkit-app-region: drag;
+    z-index: 9999;
+}
+
+#servers {
+    position: fixed;
+    top: 0;
+    margin-top: 30px;
+
+    width: 80px;
+    height: 100%;
+    background-color: var(--color-servers);
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 9998;
+}
+
+#servers div[scroll]::-webkit-scrollbar {
+    width: 0px;
+}
+
+#servers div[scroll] {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    overflow-x: auto;
+}
+
+#servers div[server] {
+    width: 60px;
+    margin-top: 6px;
+    height: 60px;
+    border-radius: 100%;
+    float: none;
+    margin-left: 10px;
+    background-color: rgb(255, 56, 56);
+
+    display: inline-block;
+}
+
+.side {
+    position: fixed;
+    left: 80px;
+    top: 0;
+    width: 230px;
+    height: 100%;
+    background-color: var(--color-side);
+}

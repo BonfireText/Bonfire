@@ -1,0 +1,60 @@
+{
+    "name": "bonfire",
+    "version": "0.0.1",
+    "description": "bon bon fire",
+    "main": "./dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "npm run build && electron ."
+    },
+    "directories": {
+        "output": "packaged"
+    },
+    "author": "koki1019#1019, Miro#5410",
+    "license": "ISC",
+    "dependencies": {
+        "browserify": "^17.0.0",
+        "child_process": "^1.0.2",
+        "discord-rpc": "^4.0.1",
+        "express": "^4.17.2",
+        "fs": "^0.0.1-security",
+        "fs-extra": "^10.0.0",
+        "mongodb": "^4.2.2",
+        "ncp": "^2.0.0",
+        "node-fs-extra": "^0.8.2"
+    },
+    "devDependencies": {
+        "electron": "^15.3.1",
+        "electron-builder": "^22.13.1"
+    },
+    "build": {
+        "productName": "Bonfire",
+        "appId": "Bonfire",
+        "mac": {
+            "category": "public.app-category-chat",
+            "type": "distribution"
+        },
+        "directories": {
+            "buildResources": "build"
+        },
+        "win": {
+            "asar": true,
+            "target": "nsis",
+            "icon": "build/icon.ico"
+        },
+        "nsis": {
+            "installerIcon": "build/icon.ico",
+            "installerHeaderIcon": "build/icon.ico",
+            "deleteAppDataOnUninstall": true
+        },
+        "files": [
+            "**/*",
+            "**/node_modules/",
+            "**/node_modules",
+            "!**/_WEBSITE_",
+            "!**/Mods",
+            "node_modules/**/*"
+        ],
+        "extends": null
+    }
+}
