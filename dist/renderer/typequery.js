@@ -44,22 +44,6 @@ var Elements = /** @class */ (function () {
             });
             return _this;
         };
-        this.getJSON = function (url) { return __awaiter(_this, void 0, void 0, function () {
-            var fetched, data;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, fetch(url, {
-                            method: "get",
-                        })];
-                    case 1:
-                        fetched = _a.sent();
-                        return [4 /*yield*/, fetched.json()];
-                    case 2:
-                        data = _a.sent();
-                        return [2 /*return*/, data];
-                }
-            });
-        }); };
         this.css = function (property, value) {
             _this.elements.forEach(function (element) {
                 var camelProp = property.replace(/(-[a-z])/, function (g) {
@@ -77,3 +61,19 @@ var Elements = /** @class */ (function () {
 function $(parameter) {
     return new Elements(parameter);
 }
+$.getJSON = function (url) { return __awaiter(void 0, void 0, void 0, function () {
+    var fetched, data;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, fetch(url, {
+                    method: "get",
+                })];
+            case 1:
+                fetched = _a.sent();
+                return [4 /*yield*/, fetched.json()];
+            case 2:
+                data = _a.sent();
+                return [2 /*return*/, data];
+        }
+    });
+}); };
