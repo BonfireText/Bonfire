@@ -1,4 +1,6 @@
 import { app, BrowserWindow, ipcMain } from "electron";
+import callServer from "./server/server";
+callServer();
 
 let window: BrowserWindow;
 
