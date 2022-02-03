@@ -21,7 +21,6 @@ class Elements {
 
         return this;
     };
-
     constructor(parameter: string | null) {
         this.elements = document.querySelectorAll(parameter ?? "") as NodeListOf<Element>;
         this.element = document.querySelector(parameter ?? "");

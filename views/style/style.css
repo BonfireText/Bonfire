@@ -101,6 +101,78 @@ body {
     background-color: var(--color-side);
 }
 
+.other-side {
+    position: fixed;
+    left: 310px;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+}
+
+.other-side *[down] {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.other-side *[up] {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.other-side *[up] *[news] {
+    width: 66vw;
+    min-height: 300px;
+
+    border: 2px solid rgb(87, 255, 96);
+    color: rgb(87, 255, 96);
+    border-radius: 5px;
+}
+
+.other-side *[up] *[bugs] {
+    width: 66vw;
+    min-height: 300px;
+
+    border: 2px solid rgb(255, 87, 87);
+    color: rgb(255, 87, 87);
+    border-radius: 5px;
+}
+
+.other-side *[up] *[other] {
+    width: 66vw;
+    min-height: 300px;
+
+    border: 2px solid rgb(87, 160, 255);
+    color: rgb(87, 160, 255);
+    border-radius: 5px;
+}
+
+.other-side *[up] legend {
+    font-size: 35px;
+}
+
+*[input] {
+    width: 350px;
+    font-size: 25px;
+
+    border: none;
+    outline: none;
+
+    background-color: #3b3e46;
+    color: white;
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 5px;
+
+    border-radius: 10px;
+}
+
+*[chat-input] {
+    width: 71vw;
+}
+
 *[btn] {
     width: 90%;
     border-radius: 5px;
