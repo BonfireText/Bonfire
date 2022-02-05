@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var statuses = $("*[status]").elements;
-var names = $("*[username]").elements;
-var userList = $("*[user-list]").element;
-var userTemplate = $("*[user-template]").element;
+var statuses = t("*[status]").elements;
+var names = t("*[username]").elements;
+var userList = t("*[user-list]").element;
+var userTemplate = t("*[user-template]").element;
 var users = [];
 var user = {
     id: Date.now().toLocaleString(),

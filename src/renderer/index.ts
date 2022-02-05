@@ -1,9 +1,9 @@
 import * as Types from "./Interfaces";
 
-const statuses = $("*[status]").elements as NodeListOf<Element>;
-const names = $("*[username]").elements as NodeListOf<Element>;
-const userList = $("*[user-list]").element as HTMLElement;
-const userTemplate = $("*[user-template]").element as any;
+const statuses = t("*[status]").elements as NodeListOf<Element>;
+const names = t("*[username]").elements as NodeListOf<Element>;
+const userList = t("*[user-list]").element as HTMLElement;
+const userTemplate = t("*[user-template]").element as any;
 
 let users: Types.User[] = [];
 

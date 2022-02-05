@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="style/style.css" />
+        <script>
+            var exports = {};
+        </script>
+
+        <script src="/dist/renderer/typequery.js"></script>
+        <script src="/dist/renderer/index.js" defer></script>
+        <script src="/dist/renderer/pageHandler.js" defer></script>
+    </head>
+    <body>
+        <div titlebar></div>
+        <div id="servers">
+            <div scroll>
+                <div server></div>
+                <div server></div>
+                <div server></div>
+            </div>
+        </div>
+
+        <div class="side">
+            <div
+                u
+                user-list
+                style="width: 95%; height: 100%; padding-bottom: 50px; margin-left: 10px; margin-top: 30px; overflow-y: scroll"
+            >
+                <a onclick="openOrDisableForm('[news-page]')" btn><img src="/views/images/news.png" width="35px" /> News</a>
+                <a onclick="openOrDisableForm('[servers-page]')" btn
+                    ><img src="/views/images/compass.png" width="35px" /> Servers</a
+                >
+                <a btn><img src="/views/images/library.png" width="35px" /> Games</a>
+                <hr />
+            </div>
+            <div bottom-panel>
+                <a more><img src="/views/images/more.png" width="50px" /></a>
+                <img avatar src="https://cdn.wallpapersafari.com/12/42/OKF0lh.jpg" width="50px" />
+                <h2 username>User 1234</h2>
+                <h3 status>Status or tsadfadsfag</h3>
+            </div>
+        </div>
+
+        <div class="other-side">
+            <div up news-page form>
+                <fieldset news>
+                    <legend>What's New</legend>
+                    <ul>
+                        <li>Friends, Games, The whole app!</li>
+                    </ul>
+                </fieldset>
+                <fieldset bugs>
+                    <legend>Bugs</legend>
+                    <ul>
+                        <li>None</li>
+                    </ul>
+                </fieldset>
+                <fieldset other>
+                    <legend>Other</legend>
+                    <ul>
+                        <li>Thank you for downloading <strong style="color: rgb(255, 123, 0)">Bonfire!</strong></li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div up servers-page form>
+                <fieldset server>
+                    <legend>
+                        <img
+                            src="https://umbra.nascom.nasa.gov/eit/images/eclipse/eit_20010621_1251_171.gif"
+                            style="vertical-align: middle; border-radius: 100%"
+                            width="45px"
+                        />
+                        Test Server
+                    </legend>
+                    <div
+                        style="
+                            background-image: url(https://umbra.nascom.nasa.gov/eit/images/eclipse/eit_20010621_1251_171.gif);
+                            background-size: 100% 500%;
+                            background-position: 0 16%;
+                        "
+                        header
+                    ></div>
+                    <div style="margin-left: 10px">
+                        <h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores tempore magni aut quam
+                            doloremque ratione reprehenderit repudiandae dicta, nostrum aliquid impedit sunt deleniti nulla omnis
+                            enim illo dolor eius illum soluta iste, dolorem fugiat earum. Unde maiores sed, reiciendis nostrum ea
+                            dolor perspiciatis sint voluptas, ratione possimus molestiae adipisci?
+                        </h4>
+                        <button button>JOIN SERVER</button>
+                    </div>
+                </fieldset>
+                <fieldset server>
+                    <legend>
+                        <img
+                            src="https://umbra.nascom.nasa.gov/eit/images/eclipse/eit_20010621_1251_171.gif"
+                            style="vertical-align: middle; border-radius: 100%"
+                            width="45px"
+                        />
+                        Test Server
+                    </legend>
+                    <div
+                        style="
+                            background-image: url(https://umbra.nascom.nasa.gov/eit/images/eclipse/eit_20010621_1251_171.gif);
+                            background-size: 100% 500%;
+                            background-position: 0 16%;
+                        "
+                        header
+                    ></div>
+                    <div style="margin-left: 10px; text-align: center">
+                        <h4 style="text-align: left">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores tempore magni aut quam
+                            doloremque ratione reprehenderit repudiandae dicta, nostrum aliquid impedit sunt deleniti nulla omnis
+                            enim illo dolor eius illum soluta iste, dolorem fugiat earum. Unde maiores sed, reiciendis nostrum ea
+                            dolor perspiciatis sint voluptas, ratione possimus molestiae adipisci?
+                        </h4>
+                        <center>
+                            <button button>JOIN SERVER</button>
+                        </center>
+                    </div>
+                </fieldset>
+                <fieldset server>
+                    <legend>
+                        <img
+                            src="https://umbra.nascom.nasa.gov/eit/images/eclipse/eit_20010621_1251_171.gif"
+                            style="vertical-align: middle; border-radius: 100%"
+                            width="45px"
+                        />
+                        Test Server
+                    </legend>
+                    <div
+                        style="
+                            background-image: url(https://umbra.nascom.nasa.gov/eit/images/eclipse/eit_20010621_1251_171.gif);
+                            background-size: 100% 500%;
+                            background-position: 0 20%;
+                        "
+                        header
+                    ></div>
+                    <div style="margin-left: 10px">
+                        <h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores tempore magni aut quam
+                            doloremque ratione reprehenderit repudiandae dicta, nostrum aliquid impedit sunt deleniti nulla omnis
+                            enim illo dolor eius illum soluta iste, dolorem fugiat earum. Unde maiores sed, reiciendis nostrum ea
+                            dolor perspiciatis sint voluptas, ratione possimus molestiae adipisci?
+                        </h4>
+                        <button button>JOIN SERVER</button>
+                    </div>
+                </fieldset>
+                <fieldset server>
+                    <legend>
+                        <img
+                            src="https://umbra.nascom.nasa.gov/eit/images/eclipse/eit_20010621_1251_171.gif"
+                            style="vertical-align: middle; border-radius: 100%"
+                            width="45px"
+                        />
+                        Test Server
+                    </legend>
+                    <div
+                        style="
+                            background-image: url(https://umbra.nascom.nasa.gov/eit/images/eclipse/eit_20010621_1251_171.gif);
+                            background-size: 100% 500%;
+                            background-position: 0 16%;
+                        "
+                        header
+                    ></div>
+                    <div style="margin-left: 10px">
+                        <h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores tempore magni aut quam
+                            doloremque ratione reprehenderit repudiandae dicta, nostrum aliquid impedit sunt deleniti nulla omnis
+                            enim illo dolor eius illum soluta iste, dolorem fugiat earum. Unde maiores sed, reiciendis nostrum ea
+                            dolor perspiciatis sint voluptas, ratione possimus molestiae adipisci?
+                        </h4>
+                        <button button>JOIN SERVER</button>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div down></div>
+        </div>
+
+        <template user-template>
+            <a btn>
+                <img avatar src="https://cdn.wallpapersafari.com/12/42/OKF0lh.jpg" width="35px" />
+                <span username>DDDDdds1234</span>
+                <span status>Lorem ipsum dolor sit.</span>
+            </a>
+        </template>
+    </body>
+</html>

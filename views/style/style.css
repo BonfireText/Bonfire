@@ -107,6 +107,8 @@ body {
     top: 0;
     height: 100%;
     width: 100vw;
+
+    overflow-y: auto;
 }
 
 .other-side *[down] {
@@ -119,6 +121,7 @@ body {
     position: absolute;
     top: 30px;
     left: 40px;
+    padding-bottom: 40px;
 }
 
 .other-side *[up] *[news] {
@@ -128,6 +131,21 @@ body {
     border: 2px solid rgb(87, 255, 96);
     color: rgb(87, 255, 96);
     border-radius: 5px;
+}
+
+.other-side *[up] *[server] {
+    width: 33vw;
+    min-height: 300px;
+
+    border: none;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    background-color: #3f4249;
+    border-radius: 5px;
+
+    margin-bottom: 30px;
+    display: inline-block;
+    margin-left: 30px;
 }
 
 .other-side *[up] *[bugs] {
@@ -271,4 +289,84 @@ body {
 .side *[u]::-webkit-scrollbar-track {
     border: 5px solid #181a1d;
     background: #181a1d;
+}
+
+*[up] *[button] {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 485px;
+
+    font-size: 20px;
+    /* position: absolute; */
+    bottom: 60px;
+    margin-top: 80px;
+
+    border-radius: 4px;
+    outline: none;
+    border: none;
+
+    background: none;
+
+    color: white;
+    vertical-align: middle;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*[up] *[button]:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 1200px) {
+    .other-side *[up] *[server] {
+        width: 33vw;
+        min-height: 300px;
+
+        border: none;
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+        color: rgb(255, 255, 255);
+        background-color: #3f4249;
+        border-radius: 5px;
+
+        margin-bottom: 30px;
+        display: block;
+        margin-left: 30px;
+    }
+
+    *[up] *[button] {
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 225px;
+
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .other-side *[up] *[server] {
+        width: 63vw;
+        min-height: 300px;
+
+        border: none;
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+        color: rgb(255, 255, 255);
+        background-color: #3f4249;
+        border-radius: 5px;
+
+        margin-bottom: 30px;
+        display: block;
+        margin-left: 10px;
+    }
+}
+
+*[up] *[server] *[header] {
+    /* position: absolute; */
+    width: 104%;
+    margin-left: -2%;
+    margin-top: -6%;
+    border-radius: 5px;
+    height: 120px;
+    background-color: green;
 }
